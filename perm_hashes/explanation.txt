@@ -1,0 +1,17 @@
+1/. Original and Tampered Perceptual Hashes (dHash)
+Purpose: To compare the original and tampered images directly, without any transformations.
+Hash Values:
+Original Perceptual Hash (dHash): 967079d8c8c4ec71
+Tampered Perceptual Hash (dHash): 967079d8c8c4ec71
+Explanation: These hashes are identical, indicating that the tampering was not significant enough for the dHash algorithm to detect any perceptual differences between the original and tampered images.
+2. Original and Tampered Magic Hashes
+Purpose: Calculated from the original image after applying the magic square transformation and including block positions.
+Original Magic Hash: 967079d8c8c4ec71
+Tampered Magic Hash: 967079d8c8c4ec71
+Explanation: These hashes are also identical, suggesting that the initial magic square transformation (multiplying each block by a magic square) did not introduce perceptual differences detectable by dHash.
+3. Transformed Original and Tampered Perceptual Hashes (dHash)
+Purpose: To compare the original and tampered images after applying the magic square transformation and including the permuted changes.
+Hash Values:
+Transformed Original Perceptual Hash (dHash): 85926f05251dc342
+Transformed Tampered Perceptual Hash (dHash): 2495a28595258392
+Explanation: These hashes are different, indicating that the combined transformation process (magic square multiplication, permutation of rows and columns, resizing, and hashing) introduced perceptual changes detectable by dHash. This shows the effectiveness of the transformation in making the tampered image perceptually distinguishable from the original.

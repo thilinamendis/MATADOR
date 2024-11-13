@@ -1,0 +1,5 @@
+Pixel tampered at (22, 25) with value 19
+Pixel tampered at (198, 615) with value 19
+Pixel tampered at (286, 333) with value 83
+Pixel tampered at (303, 289) with value 68
+Pixel tampered at (604, 370) with value 18
